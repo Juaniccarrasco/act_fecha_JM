@@ -1,6 +1,19 @@
+/**
+ * Fecha sirve para decirte si la fecha de cualquier mes es válida
+ *
+ * @property dias
+ * @property mes
+ * @property a
+ * @constructor Create empty Fecha
+ */
 class Fecha(private val dias: Int, private val mes: Int, private val a: Int) {
 
 
+    /**
+     * Valida te dice si el día y el mes introducidos se encuentran en un rango existente del año
+     *
+     * @return devuelve un boleano diciendo si esa fecha existe o no
+     */
     fun valida(): Boolean {
 
         if (dias < 1 || dias > 31) return false
